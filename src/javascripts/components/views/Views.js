@@ -1,10 +1,16 @@
 const addHomePage = () => {
   $('#main').html(`
-  <div class="profile-pic">
-    <img
-      src="src/images/profile-pic-circular.png"
-      alt="profile picture of chris calhoun"/>
-  </div>`);
+  <div class = "home-container">
+    <div class="profile-pic">
+      <img
+        src="src/images/profile-pic-circular.png"
+        alt="profile picture of chris calhoun"/>
+    </div>
+    <div class = "intro">
+      <p>Hi, I'm Chris.<br/>An aspiring <br/>Software Developer </br>from Nashville, </br>Tennessee.
+    </div>
+  </div>
+  `);
 };
 
 const addAboutMePage = () => {

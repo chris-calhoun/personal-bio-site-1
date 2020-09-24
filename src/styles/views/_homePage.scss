@@ -1,11 +1,27 @@
-.profile-pic {
-  display: flex;
-  justify-content: center;
+.home-container {
+  // border: 1px solid black;
   margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  // border: 2px solid black;
+  font-size: 32px;
+  overflow-wrap: break-word;
+  font-family: 'Work Sans', sans-serif;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.profile-pic {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .profile-pic > img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   // border: 1px solid black;
 }
