@@ -1,8 +1,8 @@
 import '../styles/main.scss';
+import Views from './components/Views';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
+  Views.createHomePage();
 };
 
 init();
