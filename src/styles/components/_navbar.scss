@@ -1,0 +1,28 @@
+nav {
+  max-width: 1720px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto repeat(4, fit-content(100%));
+  /* border: black 1px solid; */
+}
+
+nav > a {
+  /* border: black 1px solid; */
+  align-self: center;
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-right: 1.5em;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.nav-name {
+  padding: 0.25em 0 0.25em 0.5em;
+  text-transform: lowercase;
+  font-size: xx-large;
+  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+}
