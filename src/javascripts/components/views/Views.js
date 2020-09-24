@@ -7,4 +7,34 @@ const addHomePage = () => {
   </div>`);
 };
 
-export default { addHomePage };
+const addAboutMePage = () => {
+  $('#main').html(`
+  <h2>About Me</h2>
+  `);
+};
+
+const addExperiencePage = () => {
+  $('#main').html(`
+  <h2>Experience</h2>
+  `);
+};
+
+const addProjectsPage = () => {
+  $('#main').html(`
+  <h2>Projects</h2>
+  `);
+};
+
+const addContactPage = () => {
+  $('#main').html(`
+  <h2>Contact</h2>
+  `);
+};
+
+export default {
+  addHomePage,
+  addAboutMePage,
+  addExperiencePage,
+  addProjectsPage,
+  addContactPage,
+};
