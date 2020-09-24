@@ -1,10 +1,10 @@
 import '../styles/main.scss';
-import Views from './components/views/Views';
+import Views from './helpers/viewHelper';
 import Navbar from './components/navbar/navbar';
 
 const init = () => {
   Navbar.addNavbar();
-  Views.addHomePage();
+  Views.viewListener('home-link');
 };
 
 init();
