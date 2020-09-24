@@ -1,8 +1,10 @@
 import '../styles/main.scss';
-import Views from './components/Views';
+import Views from './components/views/Views';
+import Navbar from './components/navbar/navbar';
 
 const init = () => {
-  Views.createHomePage();
+  Navbar.addNavbar();
+  Views.addHomePage();
 };
 
 init();
