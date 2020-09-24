@@ -7,7 +7,7 @@ const addHomePage = () => {
         alt="profile picture of chris calhoun"/>
     </div>
     <div class = "intro">
-      <p>Hi, I'm Chris.<br/>An aspiring <br/>Software Developer </br>from Nashville, </br>Tennessee.
+      <p>Hi, I'm Chris,</br>an aspiring <br/>Software Developer </br>from Nashville, </br>Tennessee.
     </div>
   </div>
   `);
