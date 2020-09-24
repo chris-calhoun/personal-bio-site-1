@@ -15,7 +15,10 @@ const addHomePage = () => {
 
 const addAboutMePage = () => {
   $('#main').html(`
-  <h2>About Me</h2>
+  <div class = about-container>
+    <h2>About Me</h2>
+    <p>I enjoy solving challenging problems.</p>
+  </div>
   `);
 };
 
