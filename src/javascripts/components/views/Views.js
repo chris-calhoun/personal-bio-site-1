@@ -1,3 +1,5 @@
+import Projects from '../../helpers/data/projectData';
+
 const addHomePage = () => {
   $('#main').html(`
   <div class = "home-container">
@@ -21,13 +23,13 @@ const addAboutMePage = () => {
     <p>In my free time I enjoy playing chess, ultimate frisbee, and climbing.</p>
     <p>I graduated from the University of Tennessee Knoxville with a degree in mechanical engineer.</p>
     <p>I am currently participating in Nashville Software School's Web Developer Bootcamp.</p>
-
   </div>
   `);
 };
 
 const addExperiencePage = () => {
   $('#main').html(`
+
   <h2>Experience</h2>
   `);
 };
@@ -35,7 +37,9 @@ const addExperiencePage = () => {
 const addProjectsPage = () => {
   $('#main').html(`
   <h2>Projects</h2>
+  <div id="projects-container"></div>
   `);
+  Projects.createProjectCarts(Projects.getProjects());
 };
 
 const addContactPage = () => {
