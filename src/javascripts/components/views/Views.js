@@ -18,7 +18,6 @@ const addHomePage = () => {
 const addAboutMePage = () => {
   $('#main').html(`
   <div class = about-container>
-    <h2>About Me</h2>
     <p>I enjoy solving challenging problems.</p>
     <p>In my free time I enjoy playing chess, ultimate frisbee, and climbing.</p>
     <p>I graduated from the University of Tennessee Knoxville with a degree in mechanical engineer.</p>
@@ -43,8 +42,9 @@ const addProjectsPage = () => {
 
 const addContactPage = () => {
   $('#main').html(`
-  <h2>Contact</h2>
-  <p>Email: ctcalhoun2@gmail.com</p>
+  <div class="contact-container">
+    <h2>Email: ctcalhoun2@gmail.com</p>
+  </div>
   `);
 };
 
