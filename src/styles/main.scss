@@ -11,27 +11,3 @@
 body {
   background-color: #fafffd;
 }
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: fit-content(100%) auto 1fr;
-  border: black 1px solid;
-}
-
-.container-nav {
-  border: black 1px solid;
-  margin: 5px;
-}
-
-.container-main {
-  margin: 0px 20px;
-  min-height: 90vh;
-
-  border: black 1px solid;
-}
-
-.container-footer {
-  margin: 0px 20px;
-  border: black 1px solid;
-}

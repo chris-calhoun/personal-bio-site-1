@@ -1,0 +1,14 @@
+#projects-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card.project {
+  display: flex;
+  margin: 30px auto;
+  flex-basis: 33%;
+}
+
+.card-img-top {
+  height: 250px;
+}

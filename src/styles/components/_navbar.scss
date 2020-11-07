@@ -2,27 +2,40 @@ nav {
   max-width: 1720px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto repeat(4, fit-content(100%));
-  /* border: black 1px solid; */
+  grid-template-columns: repeat(4, fit-content(100%));
 }
 
-nav > a {
-  /* border: black 1px solid; */
+#nav nav a {
+  padding: 0 20px;
   align-self: center;
   text-decoration: none;
 }
 
 .nav-item {
-  margin-right: 1.5em;
   font-size: 20px;
   text-transform: lowercase;
   font-family: 'Work Sans', sans-serif;
 }
 
 .nav-name {
-  padding: 0.25em 0 0.25em 0.5em;
+  padding: 0.25em 0;
   text-transform: lowercase;
-  font-size: xx-large;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 700;
   font-family: 'Work Sans', sans-serif;
+  color: black;
+}
+
+.nav-name:hover {
+  text-decoration: none;
+}
+
+.name-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-group {
+  display: flex;
+  justify-content: center;
 }

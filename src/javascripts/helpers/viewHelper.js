@@ -23,6 +23,9 @@ const viewListener = (view) => {
   $('body').on('click', 'nav > a', (e) => {
     viewHelper(e.currentTarget.id);
   });
+  $('body').on('click', '.nav-name', (e) => {
+    viewHelper(e.currentTarget.id);
+  });
 };
 
 export default { viewListener };
