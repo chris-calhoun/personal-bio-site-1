@@ -18,6 +18,10 @@ const addAboutMePage = () => {
   <div class = about-container>
     <h2>About Me</h2>
     <p>I enjoy solving challenging problems.</p>
+    <p>In my free time I enjoy playing chess, ultimate frisbee, and climbing.</p>
+    <p>I graduated from the University of Tennessee Knoxville with a degree in mechanical engineer.</p>
+    <p>I am currently participating in Nashville Software School's Web Developer Bootcamp.</p>
+
   </div>
   `);
 };
@@ -37,6 +41,7 @@ const addProjectsPage = () => {
 const addContactPage = () => {
   $('#main').html(`
   <h2>Contact</h2>
+  <p>Email: ctcalhoun2@gmail.com</p>
   `);
 };
 
