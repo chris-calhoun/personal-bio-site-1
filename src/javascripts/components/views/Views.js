@@ -20,7 +20,7 @@ const addAboutMePage = () => {
   <div class = about-container>
     <p>I enjoy solving challenging problems.</p>
     <p>In my free time I enjoy playing chess, ultimate frisbee, and climbing.</p>
-    <p>I graduated from the University of Tennessee Knoxville with a degree in mechanical engineer.</p>
+    <p>I graduated from the University of Tennessee Knoxville with a degree in mechanical engineering.</p>
     <p>I am currently participating in Nashville Software School's Web Developer Bootcamp.</p>
   </div>
   `);
