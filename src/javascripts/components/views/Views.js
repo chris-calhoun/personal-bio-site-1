@@ -36,7 +36,6 @@ const addExperiencePage = () => {
 
 const addProjectsPage = () => {
   $('#main').html(`
-  <h2>Projects</h2>
   <div id="projects-container"></div>
   `);
   Projects.createProjectCarts(Projects.getProjects());
