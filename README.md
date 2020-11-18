@@ -6,11 +6,19 @@ This website showcases my portfolio of projects that I have been working on at N
 
 ## Screenshots
 
+![Alt text](/src/images/personal-site.png "Personal Site - Chris Calhoun")
+
 ## Build Status
+
+- MVP Complete
 
 ## Technologies Used
 
-## Demo
+- SCSS
+- HTML5, CSS, ES6
+- Webpack
+
+## Deployed Site
 
 
 
