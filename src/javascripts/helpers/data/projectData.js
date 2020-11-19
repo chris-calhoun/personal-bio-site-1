@@ -2,7 +2,7 @@ const getProjects = () => {
   const projects = [
     {
       title: 'Sorting Hat',
-      screenshot: 'src/images/sorting-hat-screenshot.png',
+      screenshot: '/src/images/sorting-hat-screenshot.png',
       description:
         'Used event listeners, callback functions, and Bootstrap to simulate the Sorting Hat.',
       technologiesUsed:
@@ -13,7 +13,7 @@ const getProjects = () => {
     },
     {
       title: 'Dino Kennel',
-      screenshot: 'src/images/dino.png',
+      screenshot: '/src/images/dino.png',
       description:
         'This project showcases all the vanilla JS I have learned in NSS up to this point. It is designed to be a record keeping application for a dinosaur kennel.',
       technologiesUsed:
@@ -24,7 +24,7 @@ const getProjects = () => {
     },
     {
       title: 'Pinterest',
-      screenshot: 'src/images/Pinterest.png',
+      screenshot: '/src/images/Pinterest.png',
       description:
         'The goal of this project was to recreate Pinterest. Once a user logs in, they are able to view, create, update, and delete boards. Within those boards, they are able to view, create, update, and delete associated pins.',
       technologiesUsed: 'Javascript ES6, Node.js ,jQuery',
@@ -34,7 +34,7 @@ const getProjects = () => {
     },
     {
       title: 'Tamagotchi',
-      screenshot: 'src/images/tamagotchi.png',
+      screenshot: '/src/images/tamagotchi.png',
       description:
         'This project required me to build a website that simulated a Tamagotchi pet from the 90s.',
       technologiesUsed:
@@ -45,7 +45,7 @@ const getProjects = () => {
     },
     {
       title: 'Joke Generator',
-      screenshot: 'src/images/joke-generator.png',
+      screenshot: '/src/images/joke-generator.png',
       description:
         'This was a short assessment to test my skills with API calls',
       technologiesUsed:
