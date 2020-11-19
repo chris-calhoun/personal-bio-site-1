@@ -5,7 +5,7 @@ const addHomePage = () => {
   <div class = "home-container">
     <div class="profile-pic">
       <img
-        src="src/images/profile-pic-circular.png"
+        src="/src/assets/img/profile-pic-circular.png"
         alt="profile picture of chris calhoun"/>
     </div>
     <div class = "intro">
