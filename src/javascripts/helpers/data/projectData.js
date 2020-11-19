@@ -1,8 +1,14 @@
+import sorting from '../../../assets/img/sorting-hat-screenshot.png';
+import dino from '../../../assets/img/dino.png';
+import pinterest from '../../../assets/img/Pinterest.png';
+import tamagotchi from '../../../assets/img/tamagotchi.png';
+import joke from '../../../assets/img/joke-generator.png';
+
 const getProjects = () => {
   const projects = [
     {
       title: 'Sorting Hat',
-      screenshot: '/src/assets/img/sorting-hat-screenshot.png',
+      screenshot: `${sorting}`,
       description:
         'Used event listeners, callback functions, and Bootstrap to simulate the Sorting Hat.',
       technologiesUsed:
@@ -13,7 +19,7 @@ const getProjects = () => {
     },
     {
       title: 'Dino Kennel',
-      screenshot: '/src/assets/img/dino.png',
+      screenshot: `${dino}`,
       description:
         'This project showcases all the vanilla JS I have learned in NSS up to this point. It is designed to be a record keeping application for a dinosaur kennel.',
       technologiesUsed:
@@ -24,7 +30,7 @@ const getProjects = () => {
     },
     {
       title: 'Pinterest',
-      screenshot: '/src/assets/img/Pinterest.png',
+      screenshot: `${pinterest}`,
       description:
         'The goal of this project was to recreate Pinterest. Once a user logs in, they are able to view, create, update, and delete boards. Within those boards, they are able to view, create, update, and delete associated pins.',
       technologiesUsed: 'Javascript ES6, Node.js ,jQuery',
@@ -34,7 +40,7 @@ const getProjects = () => {
     },
     {
       title: 'Tamagotchi',
-      screenshot: '/src/assets/img/tamagotchi.png',
+      screenshot: `${tamagotchi}`,
       description:
         'This project required me to build a website that simulated a Tamagotchi pet from the 90s.',
       technologiesUsed:
@@ -45,7 +51,7 @@ const getProjects = () => {
     },
     {
       title: 'Joke Generator',
-      screenshot: '/src/assets/img/joke-generator.png',
+      screenshot: `${joke}`,
       description:
         'This was a short assessment to test my skills with API calls',
       technologiesUsed:
