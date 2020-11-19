@@ -1,11 +1,12 @@
 import Projects from '../../helpers/data/projectData';
+import profile from '../../../assets/img/profile-pic-circular.png';
 
 const addHomePage = () => {
   $('#main').html(`
   <div class = "home-container">
     <div class="profile-pic">
       <img
-        src="/src/assets/img/profile-pic-circular.png"
+        src=${profile}
         alt="profile picture of chris calhoun"/>
     </div>
     <div class = "intro">
