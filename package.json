@@ -5,7 +5,8 @@
   "main": "src/javascripts/main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production --module-bind js=babel-loader"
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "deploy": "npm run build && firebase deploy"
   },
   "keywords": [],
   "author": "Chris Calhoun",
@@ -31,6 +32,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.14.0",
+    "@google-cloud/storage": "^5.5.0",
     "axios": "0.20.0",
     "bootstrap": "4.5.2",
     "firebase": "^7.21.0",

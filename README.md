@@ -6,7 +6,7 @@ This website showcases my portfolio of projects that I have been working on at N
 
 ## Screenshots
 
-![Alt text](/src/assets/img/personal-site.png "Personal Site - Chris Calhoun")
+![Alt text](/src/assets/img/personal-site.png 'Personal Site - Chris Calhoun')
 
 ## Build Status
 
@@ -20,5 +20,4 @@ This website showcases my portfolio of projects that I have been working on at N
 
 ## Deployed Site
 
-https://chris-calhoun.netlify.app/
-
+https://personal-site-2cf81.web.app/#
