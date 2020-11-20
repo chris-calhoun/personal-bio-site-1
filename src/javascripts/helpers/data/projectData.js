@@ -1,75 +1,34 @@
-import sorting from '../../../assets/img/sorting-hat-screenshot.png';
-import dino from '../../../assets/img/dino.png';
-import pinterest from '../../../assets/img/Pinterest.png';
-import tamagotchi from '../../../assets/img/tamagotchi.png';
-import joke from '../../../assets/img/joke-generator.png';
+import axios from 'axios';
+import apiKeys from '../apiKeys.json';
 
-const getProjects = () => {
-  const projects = [
-    {
-      title: 'Sorting Hat',
-      screenshot: `${sorting}`,
-      description:
-        'Used event listeners, callback functions, and Bootstrap to simulate the Sorting Hat.',
-      technologiesUsed:
-        'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-      available: true,
-      url: 'https://sorting-hat-cc.netlify.app/',
-      githubUrl: 'https://github.com/chris-calhoun/Sorting-hat',
-    },
-    {
-      title: 'Dino Kennel',
-      screenshot: `${dino}`,
-      description:
-        'This project showcases all the vanilla JS I have learned in NSS up to this point. It is designed to be a record keeping application for a dinosaur kennel.',
-      technologiesUsed:
-        'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-      available: false,
-      url: 'https://dino-kennel-cc.netlify.app/',
-      githubUrl: 'https://github.com/chris-calhoun/dino-kennel',
-    },
-    {
-      title: 'Pinterest',
-      screenshot: `${pinterest}`,
-      description:
-        'The goal of this project was to recreate Pinterest. Once a user logs in, they are able to view, create, update, and delete boards. Within those boards, they are able to view, create, update, and delete associated pins.',
-      technologiesUsed: 'Javascript ES6, Node.js ,jQuery',
-      available: true,
-      url: 'https://pinterest-aa40e.web.app/',
-      githubUrl: 'https://github.com/chris-calhoun/pinterest',
-    },
-    {
-      title: 'Tamagotchi',
-      screenshot: `${tamagotchi}`,
-      description:
-        'This project required me to build a website that simulated a Tamagotchi pet from the 90s.',
-      technologiesUsed:
-        'HTML, CSS, Vanilla JavaScript, Version Control with Github, SCSS',
-      available: true,
-      url: 'https://tamagotchi-cc.netlify.app/',
-      githubUrl: 'https://github.com/chris-calhoun/tamagotchi',
-    },
-    {
-      title: 'Joke Generator',
-      screenshot: `${joke}`,
-      description:
-        'This was a short assessment to test my skills with API calls',
-      technologiesUsed:
-        'HTML, CSS, Vanilla JavaScript, Version Control with Github',
-      available: true,
-      url: 'https://joke-generator-cc.netlify.app/',
-      githubUrl: 'https://github.com/chris-calhoun/joke-generator',
-    },
-  ];
+// import sorting from '../../../assets/img/sorting-hat-screenshot.png';
+// import dino from '../../../assets/img/dino.png';
+// import pinterest from '../../../assets/img/Pinterest.png';
+// import tamagotchi from '../../../assets/img/tamagotchi.png';
+// import joke from '../../../assets/img/joke-generator.png';
 
-  return projects;
-};
+const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
-const createProjectCarts = (array) => {
-  array.forEach((projectObj) => {
-    $('#projects-container').append(` 
+const getProjects = () => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/projects.json`)
+    .then((response) => {
+      const projectData = response.data;
+      const projects = [];
+
+      if (projectData) {
+        Object.keys(projectData).forEach((projectId) => {
+          projects.push(projectData[projectId]);
+        });
+      }
+      resolve(projects);
+    })
+    .catch((error) => reject(error));
+});
+
+const createProjectCards = (projectObj) => {
+  $('#projects-container').append(` 
     <div class="card project" style="width:400px">
-      <img class="card-img-top" src="${projectObj.screenshot}" alt="mage of ${projectObj.title} project.">
+      <img class="card-img-top" src="${projectObj.screenshot}" alt="Image of ${projectObj.title} project.">
       <div class="card-body">
         <h4 class="card-title">${projectObj.title}</h4>
         <p class="card-text">Description: ${projectObj.description}</p>
@@ -78,7 +37,6 @@ const createProjectCarts = (array) => {
         <a href="${projectObj.githubUrl}">Github</a>
       </div>
     </div>`);
-  });
 };
 
-export default { createProjectCarts, getProjects };
+export default { createProjectCards, getProjects };

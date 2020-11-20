@@ -38,7 +38,15 @@ const addProjectsPage = () => {
   $('#main').html(`
   <div id="projects-container"></div>
   `);
-  Projects.createProjectCarts(Projects.getProjects());
+  Projects.getProjects().then((response) => {
+    if (response.length) {
+      response.forEach((projectObj) => {
+        Projects.createProjectCards(projectObj);
+      });
+    } else {
+      $('#projects-container').append('<h2>Uh oh, there are no projects</h2>');
+    }
+  });
 };
 
 const addContactPage = () => {
